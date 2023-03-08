@@ -1,0 +1,9 @@
+.link{
+    color: #002f34;
+    
+  }
+  .link:hover {
+    font-weight: 700;
+    color: #002f34;
+    text-decoration: none;
+  }

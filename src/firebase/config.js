@@ -1,15 +1,16 @@
 import firebase from "firebase";
-import 'firebase/auth'
+import 'firebase/auth';
+import 'firebase/firestore'
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyA_2F0-hs_bQZcv83jUyScWQi2P25drXpE",
-    authDomain: "olx-clone-74017.firebaseapp.com",
-    projectId: "olx-clone-74017",
-    storageBucket: "olx-clone-74017.appspot.com",
-    messagingSenderId: "531095903332",
-    appId: "1:531095903332:web:4101c254173f021f7a5371",
-    measurementId: "G-1QHEGQ42GH"
-  };
+  apiKey: "AIzaSyBnDHnmlzRT9iMBLmG92-6Xk26Ijfrcz90",
+  authDomain: "olx-758e9.firebaseapp.com",
+  projectId: "olx-758e9",
+  storageBucket: "olx-758e9.appspot.com",
+  messagingSenderId: "924621349528",
+  appId: "1:924621349528:web:001561f3e844f879f626ed",
+  measurementId: "G-FWG0NS4DPG"
+};
 
   export default  firebase.initializeApp(firebaseConfig)
