@@ -4,7 +4,7 @@ export const PostContext=createContext(null);
 
 
 function Post({children}){
-    console.log(props ,'this is props');
+   
     const [postDetails,setPostDetails]=useState()
 
     return(

@@ -11,6 +11,7 @@ import View from './Pages/ViewPost'
  */
 import Home from './Pages/Home';
 import { AuthContext, FirebaseContext } from './store/Context';
+import { PostContext } from './store/PostContext';
 function App() {
 
   const {setUser}=useContext(AuthContext);
@@ -24,6 +25,7 @@ function App() {
   return (
     <div>
       <Router >
+        <PostContext>
         <Route path='/' exact>
           <Home />
         </Route>
@@ -39,6 +41,7 @@ function App() {
         <Route path='/view' >
           <View/>
         </Route>
+        </PostContext>       
       </Router>
     </div>
   );
