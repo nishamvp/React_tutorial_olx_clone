@@ -3,7 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 
 
 import Logo from '../../olx-logo.png';
-import { FirebaseContext } from '../../store/FirebaseContext';
+import { FirebaseContext } from '../../store/Context';
 import './Signup.css';
 
 export default function Signup() {
