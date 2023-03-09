@@ -15,7 +15,6 @@ const Create = () => {
   const date=new Date()
 
   const handleSubmit=()=>{
-    console.log(image);
     firebase.storage().ref(`/image/${image.name}`).put(image).then(({ref})=>{
       ref.getDownloadURL().then((url)=>{
         console.log(url);
@@ -25,7 +24,7 @@ const Create = () => {
           category,
           price,
           url,
-          createdAt:date
+          createdAt:date.toDateString()
         }).then(()=>history.push('/'))
       })
     })
